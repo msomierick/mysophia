@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+{% block page_content %}
+
+<table class="table able-striped table-hover">
+	<thead>
+		<tr><strong>The Students</strong></tr>
+	</thead>
+	<tbody>
+		{% for student in students %}
+			<tr>
+				<td>{{ student.first_name|capitalize }}</td>
+				<td>{{ student.surname|upper}}</td>
+			</tr>
+		{% endfor %}
+	</tbody>
+
+</table>
+{% endblock %}

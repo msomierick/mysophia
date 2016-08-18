@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}
+	MySophia- Student details
+{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+  <h2>Student details</h2>
+  <p>Enter the student details</p>
+</div>
+	{{ wtf.quick_form(form) }}
+{% endblock %}

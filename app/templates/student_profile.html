@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+{% block page_content %}
+<div class="col-md-4 col-md-offset-4">
+	<div class="page-header">
+	<h1>{{ student.first_name|capitalize }} {{ student.surname|capitalize }}</h1>
+	</div>
+	<p>Name: {{ student.first_name|capitalize }} {{ student.second_name|capitalize }} 	{{ student.surname|capitalize }}</p>
+	<p>Admin no: {{ student.admin_no }}</p>
+	<p>Email: {{ student.email }}</p>
+	<p>Phone no: 0{{ student.phone_no }}</p>
+</div>
+
+{% endblock %}
